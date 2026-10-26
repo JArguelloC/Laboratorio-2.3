@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Sistema Resenas"
+rootProject.name = "Review Resilience"
 include(":app")
  

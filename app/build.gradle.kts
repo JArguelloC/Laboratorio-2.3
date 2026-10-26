@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.laboratorio2.3"
+    namespace = "com.example.laboratorio2_3"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.laboratorio2.3"
+        applicationId = "com.example.laboratorio2_3"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
@@ -55,4 +55,10 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    // Persistencia en Disco
+    implementation("androidx.datastore:datastore-preferences:1.1.1")
+    // Integración de ViewModel con Compose y LiveData
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.6")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.6")
+    implementation("androidx.compose.runtime:runtime-livedata:1.7.5")
 }
